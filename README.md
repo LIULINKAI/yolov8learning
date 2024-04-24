@@ -51,6 +51,17 @@ python yolov8\utils\data_preprocessing.py
 ![alt text](images/stat.png)
 在训练代码中指定yaml文件路径，默认使用[yolov8n.pt](./yolov8n.pt)预训练模型:
 ![alt text](images/config.png)
+执行如下命令开始训练：
+```
+python yolov8/train.py
+```
 开始训练之后，会在当前文件夹下自动生成一个runs文件夹，里面存放着训练相关的信息:包括best.pt和last.pt，还有每个批次输入数据示意图
 ![alt text](images/train.png)
-![alt text](images/batch.png)
+
+## Step-4 开始测试
+执行如下命令开始测试模型的效果，结果将保存在runs文件夹的工作目录中。
+```
+python yolov8/inference.py
+```
+
+![alt text](images/infer.png)
